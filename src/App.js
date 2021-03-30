@@ -48,20 +48,18 @@ function App() {
   return (
     <div className="App">
       <h1>Weather App for Ulabox</h1>
-      <div className='city-list'>
-        <Context.Provider value={{ data }}>
-          <Router>
-            <Switch>
-              <Route exact path="/">
-                <CityList cities={cities} />
-              </Route>
-              <Route path={['/barcelona', '/san francisco', '/london', '/paris']}>
-                <CityDetail />
-              </Route>
-            </Switch>
-          </Router>
-        </Context.Provider>
-      </div>
+      <Context.Provider value={{ data }}>
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <CityList cities={cities} />
+            </Route>
+            <Route path={['/barcelona', '/san francisco', '/london', '/paris']}>
+              <CityDetail />
+            </Route>
+          </Switch>
+        </Router>
+      </Context.Provider>
     </div>
   );
 }
