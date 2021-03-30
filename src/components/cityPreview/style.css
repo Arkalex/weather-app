@@ -1,0 +1,28 @@
+.city-preview {
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(
+        to bottom,
+        #284cb8,
+        #3a61ca,
+        #4c77db
+    );
+    border-radius: 10%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.temp {
+    font-size: 40px;
+    margin: 15px auto;
+    text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.city-preview span p {
+    font-size: 40px;
+    margin: 0;
+}
